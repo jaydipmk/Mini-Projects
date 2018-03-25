@@ -57,36 +57,36 @@ class ImageInfo:
 
 #Debris Image
 debris_info=ImageInfo([320,240],[640,480])
-debris_image=simplegui.load_image("F:\python\Game\Ricerocks\debris2_blue.png")
+debris_image=simplegui.load_image("F:/python/Game/Ricerocks/debris2_blue.png")
 
 
 #nebula Images
 nebula_info=ImageInfo([400,300],[800,600])
-nebula_image=simplegui.load_image("F:\python\Game\Ricerocks\nebula_blue.png")
+nebula_image=simplegui.load_image("F:/python/Game/Ricerocks/nebula_blue.png")
 
 #splash Image
 splash_info=ImageInfo([200,150],[400,300])
-splash_image=simplegui.load_image("F:\python\Game\Ricerocks\splash.png")
+splash_image=simplegui.load_image("F:/python/Game/Ricerocks/splash.png")
                         
             
 #ship Image
 ship_info=ImageInfo([45,45],[90,90],35)
-ship_image=simplegui.load_image("F:\python\Game\Ricerocks\double_ship.png")
+ship_image=simplegui.load_image("F:/python/Game/Ricerocks/double_ship.png")
 
 #missile Image
 missile_info=ImageInfo([5,5],[10,10],3,50)
-missile_image=simplegui.load_image("F:\python\Game\Ricerocks\shot2.png")
+missile_image=simplegui.load_image("F:/python/Game/Ricerocks/shot2.png")
 
 #asteroid Image
 asteroid_info=ImageInfo([45,45],[90,90],40)
-asteroid_image=simplegui.load_image("F:\python\Game\Ricerocks\asteroid_blue.png")
+asteroid_image=simplegui.load_image("F:/python/Game/Ricerocks/asteroid_blue.png")
 
 
 #sounds
-soundtrack=simplegui.load_sound("F:\python\Game\Ricerocks\soundtrack.mp3")
-missile_sound=simplegui.load_sound("F:\python\Game\Ricerocks\missile.mp3")
+soundtrack=simplegui.load_sound("F:/python/Game/Ricerocks/soundtrack.mp3")
+missile_sound=simplegui.load_sound("F:/python/Game/Ricerocks/missile.mp3")
 missile_sound.set_volume(1)
-ship_thrust_sound=simplegui.load_sound("F:\python\Game\Ricerocks\thrust.mp3")
+ship_thrust_sound=simplegui.load_sound("F:/python/Game/Ricerocks/thrust.mp3")
 
 
 #helper functions for handle the transformations
