@@ -57,13 +57,12 @@ class ImageInfo:
 
 #Debris Image
 debris_info=ImageInfo([320,240],[640,480])
-debris_image=simplegui.load_image("F:\debris2_blue.png")
+debris_image=simplegui.load_image("F:\python\Game\Ricerocks\debris2_blue.png")
 
 
 #nebula Images
-#nebula2=simplegui.load_image('F:/nebula_blue.png')
 nebula_info=ImageInfo([400,300],[800,600])
-nebula_image=simplegui.load_image("F:\nebula_blue.png")
+nebula_image=simplegui.load_image("F:\python\Game\Ricerocks\nebula_blue.png")
 
 #splash Image
 splash_info=ImageInfo([200,150],[400,300])
@@ -371,22 +370,20 @@ def rock_spawner():
                 rock_group.add(Sprite(rock_pos, rock_vel, 0, rock_avel, asteroid_image, asteroid_info))
                 
                 
-frame = simplegui.create_frame("RICEROCKS", WIDTH, HEIGHT)
-
-
 my_ship = Ship([WIDTH/2,HEIGHT/2],[0,0],0,ship_image,ship_info)
 a_rock = Sprite([WIDTH/3,HEIGHT/3],[1,1],0,.1, asteroid_image,asteroid_info)
 a_missile = Sprite([2*WIDTH/3,2*HEIGHT/3],[-1,1],0,0,missile_image, missile_info,missile_sound)
 
-
 soundtrack.play()
 
+# Create a frame and assign callbacks to event handlers
+frame = simplegui.create_frame("RICEROCKS", WIDTH, HEIGHT)
+timer = simplegui.create_timer(1000, rock_spawner)
 frame.set_draw_handler(draw)
 frame.set_keydown_handler(keydown)
 frame.set_keyup_handler(keyup)
 frame.set_mouseclick_handler(click)
 
-timer = simplegui.create_timer(1000, rock_spawner)
-
+#start the frame Animation
 frame.start()
 timer.start()
