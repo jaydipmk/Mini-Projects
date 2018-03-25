@@ -88,4 +88,3 @@ frame.set_draw_handler(draw)
 
 # Start the frame animation
 frame.start()
-
