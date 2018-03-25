@@ -18,6 +18,8 @@ w="STOP WATCH"
 scr="Score:"
 dot="."
 pause=True
+
+
 def tick():
     global s,m,h,mm,pause
     if pause:
