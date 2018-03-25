@@ -36,7 +36,6 @@ def tick():
 def strt():
     timer.start()
 
-
 #Pause Button
 def stp():
     global s,m,h,mm,pause,p,A
